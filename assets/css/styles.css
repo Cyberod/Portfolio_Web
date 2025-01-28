@@ -1,0 +1,236 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+
+/* CUSTOM CSS */
+
+:root {
+    --header-height: 3.5rem;
+
+    /* COLORS */
+
+    --hue: 230;
+    --first-color: hsl(var(--hue), 55%, 55%);
+    --first-color-light: hsl(var(--hue), 55%, 65%);
+    --first-color-alt: hsl(var(--hue), 50%, 50%);
+    --title-color: hsl(var(--hue), 30%, 95%);
+    --text-color: hsl(var(--hue), 20%, 70%);
+    --text-color-light: hsl(var(--hue), 20%, 70%);
+    --body-color: hsl(var(--hue), 40%, 16%);
+    --container-color: hsl(var(--hue), 40%, 20%);
+
+    /* FONT TYPES AND  TYPOGRAPHY */
+
+    --body-font: 'Syne', sans-serif;
+    --biggest-font-size: 3rem;
+    --big-font-size: 1.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /* FONT WEIGHT */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Z-INDEX */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 5.5rem;
+        --big-font-size: 2.75rem;
+        --h11-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1.125rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/* BASE */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+p {
+    line-height: 130%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* REUSABLE CSS CLASSES */
+
+.container {
+    max-width: 1120px;
+    margin-inline: 3rem;
+    margin: 0 auto;
+}
+/* 
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 2rem;
+
+}
+
+
+
+.section__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 2rem;
+} */
+
+.main {
+    overflow: hidden;
+    background: url(/assets/img/folio-photo-copy.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+/* HEADER & NAV */
+
+.navbar-brand {
+    color: var(--title-color);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-regular);
+}
+
+/* HEADER & NAV */
+.navbar {
+    background-color: var(--container-color);
+    padding: 1rem 0;
+}
+
+.navbar-nav {
+    gap: 1.5rem;
+    margin-inline-end: 6rem;
+
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--first-color);
+}
+
+.nav-link.active {
+    color: var(--first-color);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--text-color);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* HOME */
+span.fname {
+    font-size: 3rem;
+    font-weight: var(--font-bold);
+   
+}
+
+.main h6 {
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px var(--first-color) solid;
+    width: 10%;
+}
+
+.main .bt1 {
+    background-color: var(--first-color-light);
+}
+
+.main .bt1:hover {
+    border: 2px var(--first-color-light) solid;
+}
+
+.main .bt2 {
+    background-color: var(--first-color-alt);
+}
+
+.main .bt1,
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.main .bt2:hover {
+    border: 2px var(--first-color-alt) solid;
+}
+
+.main .bt1:hover,
+.main .bt2:hover {
+    transition: 0.3s;
+    background-color: var(--hue);
+}
