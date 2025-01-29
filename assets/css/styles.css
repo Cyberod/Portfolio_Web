@@ -324,6 +324,12 @@ span.fname {
     -moz-box-shadow: -15px 6px 11px -4px rgba(3,3,3,0.37);
 }
 
+.card:hover,
+.card-light:hover {
+    transform: scale(1.05);
+    transition: 0.05s;
+}
+
 .card {
     background-color: var(--first-color);
 }
