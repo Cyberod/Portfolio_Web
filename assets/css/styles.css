@@ -34,6 +34,7 @@
     --font-regular: 400;
     --font-semi-bold: 600;
     --font-bold: 700;
+    --font-bolder: 900;
 
     /* Z-INDEX */
     --z-tooltip: 10;
@@ -142,6 +143,11 @@ img {
     height: 95vh;
 }
 
+span {
+    font: var(--big-font-size);
+    font-weight: var(--font-bolder);
+}
+
 /* HEADER & NAV */
 
 .navbar-brand {
@@ -186,9 +192,9 @@ img {
 }
 
 
-/* HOME */
+/* MAIN SECTION */
 span.fname {
-    font-size: 3rem;
+    font-size: var(--biggest-font-size);
     font-weight: var(--font-bold);
    
 }
@@ -205,7 +211,8 @@ span.fname {
     background-color: var(--first-color-light);
 }
 
-.main .bt1:hover {
+.main .bt1:hover,
+.btn1:hover {
     border: 2px var(--first-color-light) solid;
 }
 
@@ -214,7 +221,9 @@ span.fname {
 }
 
 .main .bt1,
-.main .bt2{
+.main .bt2,
+.btn1,
+.btn2{
     height: 55px;
     width: 138px;
     color: var(--title-color);
@@ -225,12 +234,73 @@ span.fname {
     border-radius: 5px;
 }
 
-.main .bt2:hover {
+.main .bt2:hover,
+.btn2:hover {
     border: 2px var(--first-color-alt) solid;
 }
 
 .main .bt1:hover,
-.main .bt2:hover {
+.main .bt2:hover,
+.btn1:hover,
+.btn2:hover {
     transition: 0.3s;
     background-color: var(--hue);
+}
+
+
+/* ABOUT SECTION */
+.about h2 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bolder);
+}
+
+.progress {
+    background-color: var(--first-color-light);
+    border-radius: 1rem;
+    height: 1.5rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.pro-value1,
+.pro-value2,
+.pro-value3,
+.pro-value4,
+.pro-value5 {
+    animation: load1 2s normal forwards;
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 0%;
+    position: absolute;
+}
+
+
+.progress p {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    position: absolute;
+    left: 1%;
+    
+}
+
+@keyframes load1 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+.btn1 {
+    background-color: var(--first-color-light);
+}
+
+.btn2 {
+    background-color: var(--first-color-alt);
 }
