@@ -15,9 +15,10 @@
     --first-color-alt: hsl(var(--hue), 50%, 50%);
     --title-color: hsl(var(--hue), 30%, 95%);
     --text-color: hsl(var(--hue), 20%, 70%);
-    --text-color-light: hsl(var(--hue), 20%, 70%);
+    --text-color-light: hsl(var(--hue), 20%, 80%);
     --body-color: hsl(var(--hue), 40%, 16%);
     --container-color: hsl(var(--hue), 40%, 20%);
+    --text-color-alt: rgb(247, 232, 252);
 
     /* FONT TYPES AND  TYPOGRAPHY */
 
@@ -304,3 +305,65 @@ span.fname {
 .btn2 {
     background-color: var(--first-color-alt);
 }
+
+
+/* SERVICE SECTION */
+
+.services {
+    background-color: var(--container-color);
+}
+
+.card,
+.card-light {
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: -15px 6px 11px -4px rgba(3,3,3,0.37);
+    -webkit-box-shadow: -15px 6px 11px -4px rgba(3,3,3,0.37);
+    -moz-box-shadow: -15px 6px 11px -4px rgba(3,3,3,0.37);
+}
+
+.card {
+    background-color: var(--first-color);
+}
+
+.card-light {
+    background-color: var(--first-color-light);
+}
+
+.card.card-light p {
+    color: var(--text-color-light);
+}
+
+.card p {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--first-color-light);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 30px;
+}
+
+.card:hover .circle {
+    background-color: var(--first-color-alt);
+    color: white;
+    transition: 0.3s;
+
+}
+
+.card-light .circle {
+    background-color: var(--first-color);
+}
+
