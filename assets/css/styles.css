@@ -161,6 +161,7 @@ span {
 .navbar {
     background-color: var(--container-color);
     padding: 1rem 0;
+    
 }
 
 .navbar-nav {
@@ -172,7 +173,8 @@ span {
 .nav-link {
     color: var(--text-color);
     font-weight: var(--font-semi-bold);
-    transition: color 0.3s;
+    transition: color 0.5s;
+
 }
 
 .nav-link:hover {
@@ -215,6 +217,7 @@ span.fname {
 .main .bt1:hover,
 .btn1:hover {
     border: 2px var(--first-color-light) solid;
+
 }
 
 .main .bt2 {
@@ -244,7 +247,8 @@ span.fname {
 .main .bt2:hover,
 .btn1:hover,
 .btn2:hover {
-    transition: 0.3s;
+    transform: scale(1.05);
+    transition: 0.5s;
     background-color: var(--hue);
 }
 
@@ -328,14 +332,32 @@ span.fname {
 .card-light:hover {
     transform: scale(1.05);
     transition: 0.05s;
+    
+}
+#card-img {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 1s ease;
+    border: 1px solid var(--first-color);
+    
+}
+
+#card-img:hover {
+    transform: rotateY(10deg) scale(1.05);
 }
 
 .card {
     background-color: var(--first-color);
+    
 }
 
 .card-light {
     background-color: var(--first-color-light);
+}
+
+#card-img {
+    background-color: var(--hue);
+    border-radius: 16px 16px 0 0;
 }
 
 .card.card-light p {
@@ -362,6 +384,22 @@ span.fname {
     font-size: 30px;
 }
 
+.contact .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--first-color-light);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+
+
 .card:hover .circle {
     background-color: var(--first-color-alt);
     color: white;
@@ -369,7 +407,129 @@ span.fname {
 
 }
 
+.circle:hover {
+    transform: scale(1.05);
+    transition: 2s;
+
+}
+
 .card-light .circle {
     background-color: var(--first-color);
 }
+
+/* PORTFOLIO SECTION */
+
+img {
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+#plus-img span {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+    position: absolute;
+    top: 100px;
+    left: 45%;
+    opacity: 0;
+    
+}
+
+#plus-img:hover span{
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+
+#plus-img::before {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+#plus-img:hover::before {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+/* MODAL IMAGE */
+
+.modal img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* 80% of viewport height */
+    object-fit: contain;
+}
+
+.modal-content {
+    background: var(--hue);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+/* CONTACT */
+
+textarea.form-contrrol {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[placeholder="Message"] {
+    height: 100px;
+}
+
+
+
+.messaging {
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px var(--first-color-light) solid;
+}
+
+.follow {
+    display: flex;
+    gap: 1.5rem;  /* Adds equal spacing between all items */
+}
+
+
+
+
+.social-link {
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--small-font-size);
+    transition: color 0.3s;
+
+}
+
+.social-link:hover {
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.contact {
+    background-color: var(--container-color);
+}
+.contact-head{
+    font-size: 2rem;
+    color: var(--text-color-light);
+ }
+
+ .contact-text {
+    font-size: var(--small-font-size);
+    color: var(--text-color-alt);
+ }
+
+ footer {
+    background-color: var(--first-color-alt);
+    color: black;
+
+
+ }
 
