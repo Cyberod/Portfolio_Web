@@ -116,16 +116,7 @@ img {
     margin-inline: 3rem;
     margin: 0 auto;
 }
-/* 
-.grid {
-    display: grid;
-    gap: 1.5rem;
-}
 
-.section {
-    padding-block: 5rem 2rem;
-
-}
 
 
 
@@ -259,39 +250,7 @@ span.fname {
     font-weight: var(--font-bolder);
 }
 
-.progress {
-    background-color: var(--first-color-light);
-    border-radius: 1rem;
-    height: 1.5rem;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    position: relative;
-}
 
-.pro-value1,
-.pro-value2,
-.pro-value3,
-.pro-value4,
-.pro-value5 {
-    animation: load1 2s normal forwards;
-    background-color: var(--first-color);
-    border-radius: 1rem;
-    height: 1.5rem;
-    width: 0%;
-    position: absolute;
-}
-
-
-.progress p {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    position: absolute;
-    left: 1%;
-    
-}
 
 @keyframes load1 {
     0% {
@@ -417,6 +376,49 @@ span.fname {
     background-color: var(--first-color);
 }
 
+
+.stack-card {
+    background-color: var(--hue);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px var(--first-color) solid;
+    
+}
+
+.stack-head{
+    font-size: 1.5rem;
+    color: var(--first-color-light);
+ }
+
+.tech {
+    border-radius: 50%;
+    background-color: var(--hue);
+    border: 1px var(--first-color) solid;
+}
+
+.progress {
+    background-color: var(--hue);
+    border: 1px var(--first-color-alt) solid;
+}
+
+.progress-bar {
+    background-color: var(--first-color-light);
+
+}
+
+
+
+.stack-text {
+    font-size: var(--small-font-size);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 /* PORTFOLIO SECTION */
 
 img {
@@ -472,6 +474,18 @@ img {
     border-color: transparent;
 }
 
+.stack-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 30px;
+
+}
+
 /* CONTACT */
 
 textarea.form-contrrol {
@@ -516,7 +530,7 @@ input[placeholder="Message"] {
 .contact {
     background-color: var(--container-color);
 }
-.contact-head{
+.contact-head {
     font-size: 2rem;
     color: var(--text-color-light);
  }
