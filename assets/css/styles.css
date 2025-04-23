@@ -144,8 +144,12 @@ span {
 
 .navbar-brand {
     color: var(--title-color);
-    font-size: var(--big-font-size);
-    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    background-color: var(--first-color-alt);
+    padding: 12px;
+    border-radius: 90px;
+    
 }
 
 /* HEADER & NAV */
@@ -316,7 +320,7 @@ span.fname {
 
 #card-img {
     background-color: var(--hue);
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px;
 }
 
 .card.card-light p {
@@ -404,18 +408,67 @@ span.fname {
 
 .progress-bar {
     background-color: var(--first-color-light);
+    animation: progressAnimation 2s ease-in-out forwards;
 
 }
 
+/* Progress bar animation */
+@keyframes progressAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+
+.progress-bar[data-aos="progress-animation"] {
+    width: 0%; /* Start at 0% */
+}
+
+.aos-animate .progress-bar[data-aos="progress-animation"] {
+    animation: progressAnimation 5s ease-in-out forwards;
+}
 
 
 .stack-text {
     font-size: var(--small-font-size);
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
+    line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+
+/* Styling for the stack list */
+.stack-list {
+    display: inline-block;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .stack-item {
+    padding: 0.3rem 0.8rem;
+    border-radius: 90px;
+    background-color: var(--first-color-light); /* Use a supplementary color */
+    color: var(--text-color-alt);
+    font-size: 0.7rem;
+    font-weight: var(--font-semi-bold);
+    border: 1px solid var(--text-color);
+
+
+
+
+  }
+
+.stack-list .stack {
+
+    margin-left: -10px;
+
 }
 
 
@@ -474,6 +527,10 @@ img {
     border-color: transparent;
 }
 
+.stacks{
+    background: var(--container-color);
+}
+
 .stack-icon {
     width: 50px;
     height: 50px;
@@ -509,6 +566,10 @@ input[placeholder="Message"] {
 .follow {
     display: flex;
     gap: 1.5rem;  /* Adds equal spacing between all items */
+}
+
+.send {
+    width: 100%;
 }
 
 
@@ -547,3 +608,173 @@ input[placeholder="Message"] {
 
  }
 
+
+
+
+
+ /* Work Experience Timeline Styles */
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  /* The vertical timeline line */
+  .timeline-line {
+    position: absolute;
+    width: 4px;
+    background-color: var(--hue);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 4px;
+    border: 1px solid var(--first-color-alt)
+  }
+  
+  /* Timeline items */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 70px;
+  }
+  
+  /* Left side timeline items */
+  .timeline-item.left {
+    left: 0;
+    padding-right: 40px;
+  }
+  
+  /* Right side timeline items */
+  .timeline-item.right {
+    left: 50%;
+    padding-left: 40px;
+  }
+  
+  /* The actual content */
+  .timeline-content {
+    padding: 25px;
+    background-color: var(--hue);
+    border-radius: 8px;
+    border: 1px solid var(--first-color-alt);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Add circles on the timeline */
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--first-color-light);
+    border: 2px solid var(--first-color-alt);
+    border-radius: 50%;
+    top: 25px;
+    z-index: 1;
+  }
+  
+  .timeline-item.left::after {
+    right: -10px;
+  }
+  
+  .timeline-item.right::after {
+    left: -10px;
+  }
+  
+  /* Timeline content styling */
+  .timeline-date {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--first-color-alt);
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-title {
+    margin-bottom: 5px;
+    color: var(--first-color-light);
+  }
+  
+  .timeline-company {
+    margin-bottom: 15px;
+    color: var(--text-color-alt);
+    font-style: italic;
+  }
+  
+  .timeline-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .timeline-line {
+      left: 40px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    
+    .timeline-item.left, .timeline-item.right {
+      left: 0;
+    }
+    
+    .timeline-item.left::after, .timeline-item.right::after {
+      left: 30px;
+    }
+
+    .card{
+        margin: 15px;
+    }
+
+    .stack-card {
+        margin: 15px;
+        margin-bottom: 0rem;
+    }
+
+    .contact-me, .messaging {
+        margin: 0px;
+        padding: 2rem;
+    }
+
+    .timeline-line, .timeline-item::after {
+        display: none;
+    }
+
+    .timeline-item.left {
+        left: 0%;
+  
+    }
+
+    .timeline-item.right {
+        left: 0%;
+    }
+
+    .timeline-item.left, .timeline-item.right {
+        padding: 15px;
+    }
+
+  }
+
+
+  
