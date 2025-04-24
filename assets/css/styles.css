@@ -125,11 +125,11 @@ img {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
     margin-bottom: 2rem;
-} */
+} 
 
 .main {
     overflow: hidden;
-    background: url(/assets/img/folio-photo-copy.jpg)no-repeat;
+
     background-size: cover;
     width: 100%;
     height: 95vh;
@@ -207,6 +207,7 @@ span.fname {
 
 .main .bt1 {
     background-color: var(--first-color-light);
+
 }
 
 .main .bt1:hover,
@@ -223,7 +224,7 @@ span.fname {
 .main .bt2,
 .btn1,
 .btn2{
-    height: 55px;
+    height: 50px;
     width: 138px;
     color: var(--title-color);
     font-size: var(--normal-font-size);
@@ -231,6 +232,7 @@ span.fname {
     outline: none;
     border: none;
     border-radius: 5px;
+
 }
 
 .main .bt2:hover,
@@ -445,10 +447,11 @@ span.fname {
 
 /* Styling for the stack list */
 .stack-list {
-    display: inline-block;
+    display: flex;
     gap: 0.5rem;
     align-items: center;
-    margin-left: 20px;
+    flex-wrap: wrap;
+
   }
   
   .stack-item {
@@ -615,9 +618,7 @@ input[placeholder="Message"] {
  /* Work Experience Timeline Styles */
 .timeline-container {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
   }
   
   /* The vertical timeline line */
@@ -627,7 +628,7 @@ input[placeholder="Message"] {
     background-color: var(--hue);
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 0;
     margin-left: -2px;
     border-radius: 4px;
     border: 1px solid var(--first-color-alt)
@@ -636,30 +637,25 @@ input[placeholder="Message"] {
   /* Timeline items */
   .timeline-item {
     position: relative;
-    width: 50%;
-    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    text-align: left;
   }
   
-  /* Left side timeline items */
-  .timeline-item.left {
-    left: 0;
-    padding-right: 40px;
-  }
-  
-  /* Right side timeline items */
-  .timeline-item.right {
-    left: 50%;
-    padding-left: 40px;
-  }
+
   
   /* The actual content */
   .timeline-content {
-    padding: 25px;
+    padding: 20px;
     background-color: var(--hue);
     border-radius: 8px;
     border: 1px solid var(--first-color-alt);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    position: relative;
+    margin-left: 20px;
+    max-width: 60%;
     transition: all 0.3s ease;
   }
   
@@ -679,15 +675,10 @@ input[placeholder="Message"] {
     border-radius: 50%;
     top: 25px;
     z-index: 1;
-  }
-  
-  .timeline-item.left::after {
-    right: -10px;
-  }
-  
-  .timeline-item.right::after {
     left: -10px;
   }
+  
+
   
   /* Timeline content styling */
   .timeline-date {
@@ -721,6 +712,70 @@ input[placeholder="Message"] {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 15px;
+  }
+
+  .illustration {
+    margin-left: 120px;
+
+
+  }
+  
+  .illustration img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 30%;
+
+  }
+
+
+  /* Education Section */
+.education {
+    background-color: var(--hue); /* Hue background */
+    color: var(--text-color); /* Text color */
+  }
+  
+  .education-card {
+    background-color: var(--hue);
+    border-radius: 10px;
+    border: 1px solid var(--first-color-alt);
+  }
+  
+  .education-card .card-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    color: var(--first-color-light);
+  }
+  
+  .education-card .card-subtitle {
+    font-size: 1.2rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color-alt);
+  }
+  
+  .education-card .card-text {
+    font-size: var(--normal-font-size);
+    line-height: 1.6;
+  }
+
+
+  /* Portfolio Image */
+
+  /* Overlay effect for the folio image */
+.folio-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .folio-img::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Adjust the height of the fade effect */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
   }
   
   /* Responsive design */
