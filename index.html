@@ -1,762 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <!-- BOXICON -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ANIMATE ON SCROLL -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Portfolio Website</title>
+  <!-- BOXICON -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ANIMATE ON SCROLL -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "rn6rZ4HW0jB1AjN23",
+      });
+    })();
+  </script>
+  <script src="assets/js/script.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Portfolio Website</title>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg text-uppercase">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">IJ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav me-auto">
-            <a class="nav-link px-lg-4 active" aria-current="page" href="#">Home</a>
-            <a class="nav-link px-lg-4" href="#">Features</a>
-            <a class="nav-link px-lg-4" href="#">Pricing</a>
-            <a class="nav-link px-lg-4" aria-disabled="true">Disabled</a>
+  <nav class="navbar navbar-expand-lg text-uppercase">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IJ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav me-auto">
+          <a class="nav-link px-lg-4 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link px-lg-4" href="#experience">Experience</a>
+          <a class="nav-link px-lg-4" href="#services">Services</a>
+          <a class="nav-link px-lg-4" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN SECTION START -->
+  <section class="main ">
+    <div class="container py-1">
+      <div class="row py-1">
+        <div class="col-lg-6 py-5 mt-5">
+          <h2><small>Hello, I'm</small><br>
+            <span class="fname">Jonathan</span>
+          </h2>
+          <h6 class="mt-3">Software Engineer</h6>
+          <div class=" cta1 mt-4">
+            <a href="#about" class="btn1">About Me <i class='bx bxs-user'></i></a>
+            <a href="#project" class="btn2">Projects <i class='bx bx-briefcase' style='color:#ffffff'></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <img src="/assets/img/Portfolio_suit.png" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION  -->
+  <section class="about py-3" id="about">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-lg-5 folio-img" data-aos="fade-right" data-aos-duration="2000">
+          <img src="/assets/img/profile_pics.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-7 pt-3">
+          <h1>About Me</h1>
+          <p>SOFTWARE ENGINEER</p>Hi, I'm Ifeanyi Jonathan — a passionate Fullstack Software Engineer with a backend
+          focus and 3+ years of experience building scalable web applications and systems that solve real-world
+          problems. I am currently diving deeper into modern backend systems and exploring the potential of AI-enhanced
+          development. I believe in building with purpose, learning continuously, and writing code that speaks.
+          When I am not coding, I am probably writing technical articles, managing projects, or sharing my learning
+          journey online.
+          </p>
+
+          <div class=" cta1 mt-4">
+            <a href="https://drive.google.com/file/d/1tAfEfd1Lvw7kSLqDvMeYm0qK1NKKnb0f/view?usp=sharing"
+              class="btn1">Resume <i class='bx bx-download' style='color:#ffffff'></i></a>
+            <a href="#contact" class="btn2">Contact <i class='bx bx-envelope'></i></a>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- MAIN SECTION START -->
-    <section class="main py-1">
-        <div class="container py-1">
-            <div class="row py-1">
-                <div class="col-lg-6 py-5 mt-5">
-                    <h2><small>Hello, I'm</small><br>
-                    <span class="fname">Jonathan</span>
-                    </h2>
-                    <h6 class="mt-3">Software Engineer</h6>
-                    <input type="button" value="Contact Me" class="bt1 mt-4 ms-3">
-                    <input type="button" value="Hire Me" class="bt2 mt-4">
-                </div>
-                <div class="col-lg-6 ">
-                  <img src="/assets/img/Portfolio_suit.png" alt="" class="img-fluid">
-                </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services py-3" id="services">
+    <div class="container  py-5">
+      <h1 class="text-center pb-5 text-uppercase">services</h1>
+      <div class="row pb-3">
+
+        <div class="col-lg-4 mb-3">
+          <div class="card " data-aos="flip-left" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bx-server'></i></span>
+              </div>
+              <h3 class="pb-3">Backend</h3>
+              <p class="text-justify">
+                Your application deserves a strong foundation, and that's where I come in. I design and develop robust,
+                scalable, and secure backend systems tailored to meet your specific business needs. Whether you require
+                seamless API integration, efficient database management, or optimized server performance, I ensure your
+                backend operates reliably to support your goals. From implementing authentication systems to building
+                RESTful APIs, I focus on delivering solutions that enhance user experience and drive your project's
+                success. Let me help you create a backend architecture that grows with your business and ensures
+                long-term reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card card-light" data-aos="flip-up" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bx-data'></i></span>
+              </div>
+              <h3 class="pb-3">DataBase</h3>
+              <p class="text-justify">Your data deserves more than just storage — it needs structure, security, and
+                strategy.
+
+                In today’s data-driven world, managing information effectively isn’t just a technical need — it’s a
+                business priority. Whether you're overwhelmed with scattered data, facing performance issues, or simply
+                unsure if your current setup can scale with your business, you're not alone.
+
+                I help businesses like yours take the guesswork out of database management. From organizing your
+                existing data to optimizing performance and ensuring security, the goal is simple: make your data work
+                for you — not against you.
+
+                Let’s build a system where your data isn’t just stored, but truly supports your decision-making, growth,
+                and success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bx-code-alt'></i></span>
+              </div>
+              <h3 class="pb-3">Frontend</h3>
+              <p class="text-justify">Because no one likes a confusing interface — not even your users.
+
+                Let’s face it: people judge digital experiences the same way they judge real-world ones — quickly and
+                emotionally. If your website or app feels clunky, outdated, or hard to use, chances are your users won’t
+                stick around to figure it out.
+
+                That’s where I come in.
+
+                I help businesses design and build frontend experiences that are clean, fast, and friendly — the kind
+                that feel good to use and easy to trust. Whether you need a full redesign or just a little polish, I’ll
+                work with you to make sure your users get the right impression, right from the first click.
+
+                Your brand deserves more than just a pretty face — it deserves an interface that works smart and looks
+                sharp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card card-light" data-aos="flip-left" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bx-refresh'></i></span>
+              </div>
+              <h3 class="pb-3">Automation</h3>
+              <p class="text-justify">Let’s take the “manual” out of your workflow and give your business a smarter
+                rhythm.
+
+                Still spending hours on tasks that should take minutes? Whether it's data entry, reporting,
+                notifications, or system updates, manual processes slow your team down and leave room for error.
+
+                Automation changes that.
+
+                I help businesses streamline their operations by setting up smart systems that do the heavy lifting — so
+                you can focus on what really matters. From integrating tools to building custom scripts and workflows,
+                we’ll turn repetitive tasks into reliable processes.
+
+                Think of it as hiring a tireless assistant who never sleeps, never forgets, and never complains.
+
+                Let’s automate the boring stuff — so you can spend more time growing your business (or enjoying a
+                well-deserved coffee break).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card" data-aos="flip-up" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bxs-devices'></i></span>
+              </div>
+              <h3 class="pb-3">Responive Design</h3>
+              <p class="text-justify">Your users are everywhere — your design should be too.
+
+                In a world where screens come in all shapes and sizes, your website or app shouldn’t just work on mobile
+                — it should shine. If users have to pinch, scroll awkwardly, or wait for heavy pages to load, they’re
+                likely to bounce before you make an impression.
+
+                That’s where responsive design steps in.
+
+                I help businesses create digital experiences that adapt beautifully to any device — from large desktop
+                monitors to the smallest smartphones. Whether you're starting from scratch or need to fix a
+                non-responsive layout, I make sure your content stays readable, your interface remains intuitive, and
+                your brand looks its best, everywhere.
+
+                Let’s make your design feel right — no matter where your users land.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card card-light" data-aos="flip-right" data-aos-duration="2000">
+            <div class="card-body text-center py-3">
+              <div class="circle m-3">
+                <span><i class='bx bx-cog'></i></span>
+              </div>
+              <h3 class="pb-3">System Management</h3>
+              <p class="text-justify">Your infrastructure deserves more than “set it and forget it.”
+
+                Running systems on AWS with Docker gives you flexibility, but without proper management, that power can
+                become complexity. From EC2 and ECS to S3 and CloudWatch, and containerized apps that need
+                orchestration, updates, and security — it’s a lot to keep track of.
+
+                That’s where I step in.
+
+                I help businesses manage cloud environments built on AWS and Docker — ensuring your containers are
+                deployed efficiently, your resources are optimized, and your systems stay resilient and secure. Whether
+                it’s setting up scalable ECS clusters, automating builds and deployments, or configuring secure networks
+                and backups, I bring structure to your stack.
+
+                Let’s turn your AWS + Docker setup into a reliable, automated, and future-ready engine — so you can
+                focus on building, not babysitting servers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- WORK EXPERIENCE SECTION -->
+  <section class="experience py-3" id="experience">
+    <div class="container py-5">
+      <h1 class="text-center pb-5 text-uppercase">Experience</h1>
+      <div class="timeline-container">
+        <!-- Timeline center line -->
+        <div class="timeline-line"></div>
+
+        <!-- Project Management - Left side -->
+        <div class="timeline-item" data-aos="fade-left" data-aos-duration="2000">
+          <div class="timeline-content">
+            <div class="timeline-date">2025 - Present</div>
+            <h3 class="timeline-title">Internship Project Management</h3>
+            <h4 class="timeline-company">Google</h4>
+            <p class="timeline-description">
+              Currently enrolled in Google's Project Management certification program, mastering entry-level project
+              management skills and documentation across all project phases. Developing expertise in Agile methodologies
+              with focus on Scrum events, artifacts, and roles. Enhancing strategic communication, problem-solving, and
+              stakeholder management through practical, real-world scenarios. Applying these skills to deliver
+              structured, efficient project outcomes.
+            </p>
+            <p class="mb-2 stack-head">Skills</p>
+            <div class="timeline-tech">
+              <span class="stack-item">Project Management</span>
+              <span class="stack-item">Leadership and Management</span>
+              <span class="stack-item">Planning</span>
+              <span class="stack-item">Business Communication</span>
+              <span class="stack-item">Software Engineering</span>
+              <span class="stack-item">Entrepreneurship</span>
+              <span class="stack-item">Collabortion</span>
+              <span class="stack-item">Strategy and Operations</span>
 
             </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION  -->
-     <section class="about py-3">
-      <div class="container py-3">
-        <div class="row">
-          <div class="col-lg-5 folio-img" data-aos="fade-right" data-aos-duration="2000">
-            <img src="/assets/img/profile_pics.png" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-7 pt-3">
-            <h1>About Me</h1>
-            <p>SOFTWARE ENGINEER</p>Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor 
+
+          <div class="illustration">
+            <img src="/assets/img/illustration1.png" alt="illustration" srcset="">
+          </div>
+
+
+        </div>
+
+
+
+        <!-- Alx - Right side -->
+        <div class="timeline-item " data-aos="fade-left" data-aos-duration="2000">
+          <div class="timeline-content">
+            <div class="timeline-date">AUG, 2022 - 2023</div>
+            <h3 class="timeline-title">Software Engineer</h3>
+            <h4 class="timeline-company">ALX Africa</h4>
+            <p class="timeline-description">
+              Completed the prestigious 12-month ALX Software Engineering Programme,
+              an intensive, fully-funded bootcamp recognized globally for developing elite African tech talent.
+              Mastered full-stack development through rigorous project-based learning,
+              building complex applications from scratch while meeting strict deadlines.
+              Developed expertise in C programming, data structures, algorithms, Unix systems,
+              Backend and front-end technologies. Cultivated essential professional skills
+              including technical writing, peer collaboration, and problem-solving methodologies that complement
+              technical abilities. Consistently delivered high-quality code while adapting to evolving requirements
+              in a fast-paced environment.
             </p>
 
-            <input type="button" value="Download CV" class="btn1 mt-2 ms-2">
-            <input type="button" value="Contact Us" class="btn2 mt-2">
+            <p class="mb-2 stack-head">SKills</p>
+            <div class="timeline-tech">
+              <span class="stack-item">JavaScript</span>
+              <span class="stack-item">Flask</span>
+              <span class="stack-item">MySQL</span>
+              <span class="stack-item">back-end programming</span>
+              <span class="stack-item">front-end programming</span>
+              <span class="stack-item">DB Management</span>
+              <span class="stack-item">version control</span>
+              <span class="stack-item">Containerization</span>
+              <span class="stack-item">Bootstrap</span>
+              <span class="stack-item">Problem-solving</span>
+              <span class="stack-item">Strong communication skills</span>
+              <span class="stack-item">C programming Language</span>
+              <span class="stack-item">Servers</span>
+            </div>
+          </div>
+          <div class="illustration">
+            <img src="/assets/img/illustraton2.png" alt="illustration" srcset="">
           </div>
         </div>
-      </div>
 
-     </section>
+        <!-- Experience 3 - Left side -->
+        <div class="timeline-item left" data-aos="fade-left" data-aos-duration="2000">
+          <div class="timeline-content">
+            <div class="timeline-date">FEB - JULY, 2022</div>
+            <h3 class="timeline-title">Search Engine Optimiser</h3>
+            <h4 class="timeline-company">Haelsoft Digital</h4>
+            <p class="timeline-description">
+              Served as an SEO Specialist intern, driving measurable improvements in client website visibility and
+              organic traffic. Conducted comprehensive keyword research, competitor analysis, and technical SEO audits
+              to identify optimization opportunities. Implemented on-page SEO strategies including metadata
+              optimization, content enhancement, and internal linking structures. Collaborated with content and
+              development teams to ensure SEO best practices were integrated throughout the website ecosystem. Monitored
+              performance metrics using Google Analytics and Search Console, delivering data-driven recommendations that
+              resulted in improved search rankings and increased conversion rates for key landing pages.
+            </p>
 
-    <!-- SERVICES SECTION -->
-    <section class="services py-3">
-      <div class="container  py-5">
-        <h1 class="text-center pb-5 text-uppercase">services</h1>
-        <div class="row pb-3">
+            <p class="mb-2 stack-head">Skills</p>
+            <div class="timeline-tech">
+              <span class="stack-item">Page speed optimization</span>
+              <span class="stack-item">Technical problem-solving</span>
+              <span class="stack-item">Metadata optimization</span>
+              <span class="stack-item">SEO best practices implementation</span>
+              <span class="stack-item">Search ranking improvement strategies</span>
+              <span class="stack-item">Competitor analysis</span>
+              <span class="stack-item">Keyword research and analysis</span>
+              <span class="stack-item">Data analysis and performance tracking</span>
 
-          <div class="col-lg-4 mb-3">
-            <div class="card " data-aos="flip-left" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bx-server'></i></span>
-                </div>
-                <h3 class="pb-3">Backend</h3>
-                <p>
-                  Your application deserves a strong foundation, and that's where I come in. I design and develop robust, scalable, and secure backend systems tailored to meet your specific business needs. Whether you require seamless API integration, efficient database management, or optimized server performance, I ensure your backend operates reliably to support your goals. From implementing authentication systems to building RESTful APIs, I focus on delivering solutions that enhance user experience and drive your project's success. Let me help you create a backend architecture that grows with your business and ensures long-term reliability.
-                </p>
-              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="card card-light" data-aos="flip-up" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bx-data'></i></span>
-                </div>
-                <h3 class="pb-3">DataBase</h3>
-                <p>Your data deserves more than just storage — it needs structure, security, and strategy.
-
-                  In today’s data-driven world, managing information effectively isn’t just a technical need — it’s a business priority. Whether you're overwhelmed with scattered data, facing performance issues, or simply unsure if your current setup can scale with your business, you're not alone.
-                  
-                  I help businesses like yours take the guesswork out of database management. From organizing your existing data to optimizing performance and ensuring security, the goal is simple: make your data work for you — not against you.
-                  
-                  Let’s build a system where your data isn’t just stored, but truly supports your decision-making, growth, and success.
-                </p>
-              </div>
-            </div>
+          <div class="illustration">
+            <img src="/assets/img/illustration1.png" alt="illustration" srcset="">
           </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bx-code-alt'></i></span>
-                </div>
-                <h3 class="pb-3">Frontend</h3>
-                <p>Because no one likes a confusing interface — not even your users.
-
-                  Let’s face it: people judge digital experiences the same way they judge real-world ones — quickly and emotionally. If your website or app feels clunky, outdated, or hard to use, chances are your users won’t stick around to figure it out.
-                  
-                  That’s where I come in.
-                  
-                  I help businesses design and build frontend experiences that are clean, fast, and friendly — the kind that feel good to use and easy to trust. Whether you need a full redesign or just a little polish, I’ll work with you to make sure your users get the right impression, right from the first click.
-                  
-                  Your brand deserves more than just a pretty face — it deserves an interface that works smart and looks sharp.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="card card-light" data-aos="flip-left" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bx-refresh'></i></span>
-                </div>
-                <h3 class="pb-3">Automation</h3>
-                <p>Let’s take the “manual” out of your workflow and give your business a smarter rhythm.
-
-                  Still spending hours on tasks that should take minutes? Whether it's data entry, reporting, notifications, or system updates, manual processes slow your team down and leave room for error.
-                  
-                  Automation changes that.
-                  
-                  I help businesses streamline their operations by setting up smart systems that do the heavy lifting — so you can focus on what really matters. From integrating tools to building custom scripts and workflows, we’ll turn repetitive tasks into reliable processes.
-                  
-                  Think of it as hiring a tireless assistant who never sleeps, never forgets, and never complains.
-                  
-                  Let’s automate the boring stuff — so you can spend more time growing your business (or enjoying a well-deserved coffee break).
-                </p>
-              </div>
-            </div>            
-          </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="card" data-aos="flip-up" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bxs-devices' ></i></span>
-                </div>
-                <h3 class="pb-3">Responive Design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eos ea, inventore, eligendi exercitationem labore quos laborum culpa dignissimos, assumenda laboriosam maiores? Rem, illo.
-                   Molestias optio recusandae deleniti sed labore.</p>
-              </div>
-            </div>            
-          </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="card card-light" data-aos="flip-right" data-aos-duration="2000">
-              <div class="card-body text-center py-3">
-                <div class="circle m-3">
-                  <span><i class='bx bx-cog'></i></span>
-                </div>
-                <h3 class="pb-3">System Management</h3>
-                <p>Your infrastructure deserves more than “set it and forget it.”
-
-                  Running systems on AWS with Docker gives you flexibility, but without proper management, that power can become complexity. From EC2 and ECS to S3 and CloudWatch, and containerized apps that need orchestration, updates, and security — it’s a lot to keep track of.
-                  
-                  That’s where I step in.
-                  
-                  I help businesses manage cloud environments built on AWS and Docker — ensuring your containers are deployed efficiently, your resources are optimized, and your systems stay resilient and secure. Whether it’s setting up scalable ECS clusters, automating builds and deployments, or configuring secure networks and backups, I bring structure to your stack.
-                  
-                  Let’s turn your AWS + Docker setup into a reliable, automated, and future-ready engine — so you can focus on building, not babysitting servers.
-                </p>
-              </div>
-            </div> 
-          </div>
-
         </div>
+
       </div>
+    </div>
 
-    </section>
 
 
-    <!-- WORK EXPERIENCE SECTION -->
-     <section class="experience py-3">
-      <div class="container py-5">
-        <h1 class="text-center pb-5 text-uppercase">Experience</h1>
-        <div class="timeline-container">
-          <!-- Timeline center line -->
-          <div class="timeline-line"></div>
-          
-          <!-- Project Management - Left side -->
-          <div class="timeline-item" data-aos="fade-left" data-aos-duration="2000">
-            <div class="timeline-content">
-              <div class="timeline-date">2025 - Present</div>
-              <h3 class="timeline-title">Internship Project Management</h3>
-              <h4 class="timeline-company">Google</h4>
-              <p class="timeline-description">
-                Currently enrolled in Google's Project Management certification program, mastering entry-level project management skills and documentation across all project phases. Developing expertise in Agile methodologies with focus on Scrum events, artifacts, and roles. Enhancing strategic communication, problem-solving, and stakeholder management through practical, real-world scenarios. Applying these skills to deliver structured, efficient project outcomes.              
+  </section>
+
+
+  <!-- EDUCATION SECTION -->
+  <section class="education py-5" id="education">
+    <div class="container">
+      <h1 class="text-center pb-5 text-uppercase">Education</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card education-card shadow-sm p-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card-body">
+              <h3 class="card-title">Bachelor of Science in Computer Science</h3>
+              <h4 class="card-subtitle mb-4 pt-3">Michael Okpara University of Agriculture Umudike</h4>
+              <p class="card-text">
+                Graduated with honors in Computer Science (2018 - 2022). Specialized in software development, data
+                structures, and algorithms. Final year project focused on "Optimizing Machine Learning Models for
+                Predictive Analytics," which received departmental recognition.
               </p>
-              <p class="mb-2 stack-head">Skills</p>
-              <div class="timeline-tech">
-                <span class="stack-item">Project Management</span>
-                <span class="stack-item">Leadership and Management</span>
-                <span class="stack-item">Planning</span>
-                <span class="stack-item">Business Communication</span>
-                <span class="stack-item">Software Engineering</span>
-                <span class="stack-item">Entrepreneurship</span>
-                <span class="stack-item">Collabortion</span>
-                <span class="stack-item">Strategy and Operations</span>
-
-              </div>
-            </div>
-
-            <div class="illustration">
-              <img src="/assets/img/illustration1.png" alt="illustration" srcset="">
-            </div>
-
-
-          </div>
-          
-
-          
-          <!-- Alx - Right side -->
-          <div class="timeline-item " data-aos="fade-left" data-aos-duration="2000">
-            <div class="timeline-content">
-              <div class="timeline-date">AUG, 2022 - 2023</div>
-              <h3 class="timeline-title">Software Engineer</h3>
-              <h4 class="timeline-company">ALX Africa</h4>
-              <p class="timeline-description">
-                Completed the prestigious 12-month ALX Software Engineering Programme, an intensive, fully-funded bootcamp recognized globally for developing elite African tech talent. Mastered full-stack development through rigorous project-based learning, building complex applications from scratch while meeting strict deadlines. Developed expertise in C programming, data structures, algorithms, Unix systems, and front-end technologies. Cultivated essential professional skills including technical writing, peer collaboration, and problem-solving methodologies that complement technical abilities. Consistently delivered high-quality code while adapting to evolving requirements in a fast-paced environment.              
-              </p>
-
-              <p class="mb-2 stack-head">SKills</p>
-              <div class="timeline-tech">
-                <span class="stack-item">JavaScript</span>
-                <span class="stack-item">Flask</span>
-                <span class="stack-item">MySQL</span>
-                <span class="stack-item">back-end programming</span>
-                <span class="stack-item">front-end programming</span>
-                <span class="stack-item">DB Management</span>
-                <span class="stack-item">version control</span>
-                <span class="stack-item">Containerization</span>
-                <span class="stack-item">Bootstrap</span>
-                <span class="stack-item">Problem-solving</span>
-                <span class="stack-item">Strong communication skills</span>
-                <span class="stack-item">C programming Language</span>
-                <span class="stack-item">Servers</span>
-              </div>
-            </div>
-            <div class="illustration">
-              <img src="/assets/img/illustraton2.png" alt="illustration" srcset="">
-            </div>
-          </div>
-          
-          <!-- Experience 3 - Left side -->
-          <div class="timeline-item left" data-aos="fade-left" data-aos-duration="2000">
-            <div class="timeline-content">
-              <div class="timeline-date">FEB - JULY, 2022</div>
-              <h3 class="timeline-title">Search Engine Optimiser</h3>
-              <h4 class="timeline-company">Haelsoft Digital</h4>
-              <p class="timeline-description">
-                Served as an SEO Specialist intern, driving measurable improvements in client website visibility and organic traffic. Conducted comprehensive keyword research, competitor analysis, and technical SEO audits to identify optimization opportunities. Implemented on-page SEO strategies including metadata optimization, content enhancement, and internal linking structures. Collaborated with content and development teams to ensure SEO best practices were integrated throughout the website ecosystem. Monitored performance metrics using Google Analytics and Search Console, delivering data-driven recommendations that resulted in improved search rankings and increased conversion rates for key landing pages.
-              </p>
-
-              <p class="mb-2 stack-head">Skills</p>
-              <div class="timeline-tech">
-                <span class="stack-item">Page speed optimization</span>
-                <span class="stack-item">Technical problem-solving</span>
-                <span class="stack-item">Metadata optimization</span>
-                <span class="stack-item">SEO best practices implementation</span>
-                <span class="stack-item">Search ranking improvement strategies</span>
-                <span class="stack-item">Competitor analysis</span>
-                <span class="stack-item">Keyword research and analysis</span>
-                <span class="stack-item">Data analysis and performance tracking</span>
-
-              </div>
-            </div>
-            <div class="illustration">
-              <img src="/assets/img/illustration1.png" alt="illustration" srcset="">
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-     
-
-    </section>
-
-
-    <!-- EDUCATION SECTION -->
-    <section class="education py-5" id="education">
-      <div class="container">
-        <h1 class="text-center pb-5 text-uppercase">Education</h1>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="card education-card shadow-sm p-4" data-aos="fade-up" data-aos-duration="2000">
-              <div class="card-body">
-                <h3 class="card-title">Bachelor of Science in Computer Science</h3>
-                <h4 class="card-subtitle mb-4 pt-3">Michael Okpara University of Agriculture Umudike</h4>
-                <p class="card-text">
-                  Graduated with honors in Computer Science (2018 - 2022). Specialized in software development, data structures, and algorithms. Final year project focused on "Optimizing Machine Learning Models for Predictive Analytics," which received departmental recognition.
-                </p>
-                <p class="mb-2 st">Key Skills Acquired:</p>
-                <div class="stack-list">
-                  <span class="stack-item">Software Development</span>
-                  <span class="stack-item">Data Structures</span>
-                  <span class="stack-item">Algorithms</span>
-                  <span class="stack-item">Database Management</span>
-                  <span class="stack-item">Web Development</span>
-                  <span class="stack-item">Machine Learning</span>
-                </div>
+              <p class="mb-2 st">Key Skills Acquired:</p>
+              <div class="stack-list">
+                <span class="stack-item">Software Development</span>
+                <span class="stack-item">Data Structures</span>
+                <span class="stack-item">Algorithms</span>
+                <span class="stack-item">Database Management</span>
+                <span class="stack-item">Web Development</span>
+                <span class="stack-item">Machine Learning</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- POGRAMMING STACK SECTION -->
-    <section class="stacks py-3" id="stacks">
-      <div class="container  py-5">
-        <h1 class="text-center pb-5 text-uppercase">Stack</h1>
+  <!-- POGRAMMING STACK SECTION -->
+  <section class="stacks py-3" id="stacks">
+    <div class="container  py-5">
+      <h1 class="text-center pb-5 text-uppercase">Stack</h1>
 
-        <!-- Frontend Stack -->
-        <div class="row mt-5">
-          <p class="mb-3 contact-head">Frontend</p>
+      <!-- Frontend Stack -->
+      <div class="row mt-5">
+        <p class="mb-3 contact-head">Frontend</p>
 
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Tailwind.png" alt="Tailwind Css" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Tailwind Css</h4>
-                  <div class="d-flex align-items-center gap-2 ">
-                    <div class="progress flex-grow-1 " style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 85%; width: 0%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">85%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Tailwind.png" alt="Tailwind Css" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Tailwind Css</h4>
+                <div class="d-flex align-items-center gap-2 ">
+                  <div class="progress flex-grow-1 " style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 85%; width: 0%;"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">85%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              Tailwind CSS is a utility-first framework that simplifies building modern, responsive designs. Its
+              pre-defined classes let you style directly in HTML, speeding up development and ensuring scalability.
+            </p>
           </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/CSS.png" alt="Css" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Css</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">95%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Bootstrap.png" alt="Bootstrap Css" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Bootstrap Css</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width:100%; width: 0%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">100%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/HTML.png" alt="Html" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Html</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width: 100%; width: 0%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">100%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Typescript.png" alt="Typescript" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Typescript</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width: 85%; width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">85%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/vite.png" alt="Typescript" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Vite</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width: 95%; width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">95%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/React.png" alt="Typescript" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">React</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width: 90%; width: 0%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">90%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Backend Stack -->
-        <div class="row mt-5">
-          <p class="mb-3 contact-head">Backend</p>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/django.png" alt="django" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Django</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style="--progress-width: 98%; width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">98%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/CSS.png" alt="Css" class="img-fluid stack-icon" style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Css</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">95%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              CSS is the design language of the web, enabling you to style and layout your website with colors, fonts,
+              animations, and responsive designs. It ensures your site looks great on any device while delivering a
+              seamless user experience.
+            </p>
           </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech bg-light" style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/flask.png" alt="Css" class="img-fluid stack-icon " style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Flask</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 85%; width: 0%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">85%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/fast.png" alt="Bootstrap Css" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Fast Api</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">95%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Python.png" alt="Bootstrap Css" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Python</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 100%; width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">100%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Database -->
-        <div class="row mt-5">
-          <p class="mb-3 contact-head">Databases</p>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/MySQL.png" alt="MySQL" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">MySQL</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">98%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Bootstrap.png" alt="Bootstrap Css" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Bootstrap Css</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width:100%; width: 0%;"
+                      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">100%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              Bootstrap is a powerful CSS framework that simplifies responsive web design. It provides pre-designed
+              components, a grid system, and utility classes, enabling you to build sleek, mobile-first websites quickly
+              and efficiently.
+            </p>
           </div>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech bg-light" style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/postgresql.png" alt="PostgreSQL" class="img-fluid stack-icon " style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">PostgreSQL</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span class="stack-head fw-medium">85%</span>
-                  </div>
-                </div>
-              </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
-            </div>
-          </div>
-
         </div>
 
-
-        <!-- Devops -->
-        <div class="row mt-5">
-          <p class="mb-3 contact-head">Devops</p>
-
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Docker.png" alt="Docker" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Docker</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">95%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/HTML.png" alt="Html" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Html</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width: 100%; width: 0%;"
+                      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">100%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              HTML is the core language for structuring web pages, defining elements like headings, images, and links to
+              create the foundation of any website.
+            </p>
           </div>
+        </div>
 
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Git.png" alt="Git" class="img-fluid stack-icon " style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Git</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 100%;width: 0%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation "></div>
-                    </div>
-                    <span class="stack-head fw-medium">100%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Typescript.png" alt="Typescript" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Typescript</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width: 85%; width: 85%;"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">85%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              TypeScript is a superset of JavaScript that adds static typing, making it easier to catch errors during
+              development. It enhances code quality, scalability, and maintainability, especially for large projects.
+            </p>
           </div>
+        </div>
 
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Nginx.png" alt="Nginx" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Nginx</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 90%; width: 0%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">90%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/vite.png" alt="Typescript" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Vite</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width: 95%; width: 95%;"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">95%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              Vite is a fast and modern build tool for web development. It offers instant server start, lightning-fast
+              HMR (Hot Module Replacement), and optimized builds, making it ideal for modern frameworks like React, Vue,
+              and Svelte.
+            </p>
           </div>
+        </div>
 
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
-            <div class="stack-card shadow-sm p-4  ">
-              <div class="d-flex align-items-center gap-4 mb-3">
-                <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
-                  <img src="/assets/img/stacks/Linux.png" alt="Linux" class="img-fluid stack-icon" style="object-fit: cover;">
-                </div>
-                <div class="flex-grow-1">
-                  <h4 class="stack-head mb-1">Linux</h4>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="progress flex-grow-1" style="height: 10px;">
-                      <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
-                    </div>
-                    <span class="stack-head fw-medium">95%</span>
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/React.png" alt="Typescript" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">React</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width: 90%; width: 0%;"
+                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
                   </div>
+                  <span class="stack-head fw-medium">90%</span>
                 </div>
               </div>
-              <p class=" mt-2 stack-text">
-                PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and SQL compliance. It supports both structured and unstructured data, offering powerful indexing, full-text search, and ACID transactions. Widely used in web applications, analytics, and enterprise solutions, PostgreSQL is highly scalable and supports advanced features like JSONB, window functions, and replication.
-              </p>
             </div>
+            <p class=" mt-2 stack-text">
+              A powerful JavaScript library for building dynamic and interactive user interfaces. It uses a
+              component-based architecture and a virtual DOM for efficient rendering, making it ideal for creating
+              scalable and fast web applications.
+            </p>
           </div>
+        </div>
 
-        </div>         
-        
       </div>
-    </section>
+
+      <!-- Backend Stack -->
+      <div class="row mt-5">
+        <p class="mb-3 contact-head">Backend</p>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/django.png" alt="django" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Django</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style="--progress-width: 98%; width: 98%;"
+                      aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">98%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Django is a Python web framework for building secure, scalable applications quickly. It includes tools for
+              databases, authentication, and routing, enabling clean and efficient development.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech bg-light" style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/flask.png" alt="Css" class="img-fluid stack-icon "
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Flask</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 85%; width: 0%;"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">85%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Flask is a lightweight Python web framework for building simple, scalable applications. It provides
+              flexibility and control, making it ideal for projects that require custom solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/fast.png" alt="Bootstrap Css" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Fast Api</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">95%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              FastAPI is a modern Python framework for building APIs. It's fast, easy to use, and supports async
+              programming, making it ideal for high-performance, scalable applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Python.png" alt="Bootstrap Css" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Python</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 100%; width: 100%;"
+                      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">100%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Python is a versatile programming language known for its simplicity and readability. It is widely used for
+              web development, data analysis, machine learning, automation, and more.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Database -->
+      <div class="row mt-5">
+        <p class="mb-3 contact-head">Databases</p>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/MySQL.png" alt="MySQL" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">MySQL</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">98%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              MySQL is a popular open-source relational database management system known for its speed, reliability, and
+              ease of use. It is widely used for web applications and data storage.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech bg-light" style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/postgresql.png" alt="PostgreSQL" class="img-fluid stack-icon "
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">PostgreSQL</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="stack-head fw-medium">85%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              PostgreSQL is a powerful open-source relational database system known for its reliability, scalability,
+              and advanced features like JSON support, full-text search, and ACID compliance.
+            </p>
+          </div>
+        </div>
+
+      </div>
 
 
-    <!-- PROJECT SECTION -->
-    <section class="project py-3" id="project">
+      <!-- Devops -->
+      <div class="row mt-5">
+        <p class="mb-3 contact-head">Devops</p>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Docker.png" alt="Docker" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Docker</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">95%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Docker is a platform for containerizing applications, enabling consistent environments across development
+              and production. It simplifies deployment, scalability, and resource efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Git.png" alt="Git" class="img-fluid stack-icon "
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Git</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 100%;width: 0%;"
+                      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation "></div>
+                  </div>
+                  <span class="stack-head fw-medium">100%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Git is a distributed version control system that tracks changes in source code during software
+              development. It enables collaboration, branching, and efficient code management.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Nginx.png" alt="Nginx" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Nginx</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 90%; width: 0%;"
+                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">90%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Nginx is a high-performance web server and reverse proxy server. Widely used for load balancing, caching,
+              and serving static content, ensuring Applications are scalable and reliable.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="stack-card shadow-sm p-4  ">
+            <div class="d-flex align-items-center gap-4 mb-3">
+              <div class="position-relative  overflow-hidden tech " style="width: 56px; height: 56px;">
+                <img src="/assets/img/stacks/Linux.png" alt="Linux" class="img-fluid stack-icon"
+                  style="object-fit: cover;">
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="stack-head mb-1">Linux</h4>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress flex-grow-1" style="height: 10px;">
+                    <div class="progress-bar" role="progressbar" style=" --progress-width: 95%; width: 0%;"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-aos="progress-animation"></div>
+                  </div>
+                  <span class="stack-head fw-medium">95%</span>
+                </div>
+              </div>
+            </div>
+            <p class=" mt-2 stack-text">
+              Linux is an open-source operating system known for its stability, security, and flexibility. It powers
+              servers, desktops, and embedded systems, making it ideal for developers and enterprises.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECT SECTION -->
+  <section class="project py-3" id="project">
     <div class="container py-5">
       <h1 class="text-center pb-5 text-uppercase">Recent Works</h1>
       <div class="row">
         <div class="col-lg-1"></div>
-        <div class="col-lg-5 mb-3">
+        <div class="col-lg-5 mb-5">
           <div class="card" data-aos="fade-right" data-aos-duration="2000" id="card-img">
             <img src="/assets/img/cinemania.jpg" alt="" class="image-fluid">
             <div class="card-body" id="plus-img">
-              
-              <span><i class='bx bx-plus' style='color:#ffffff' data-bs-toggle="modal" data-bs-target="#portfolio-modal1"></i></span>
+
+              <span><i class='bx bx-plus' style='color:#ffffff' data-bs-toggle="modal"
+                  data-bs-target="#portfolio-modal1"></i></span>
               <h3 class="pt-3">Cinemania</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque.
+              <p> Cinemania is a Django-powered web application crafted for movie enthusiasts to explore, search, and
+                discover movies effortlessly.
+                By integrating with the TMDB API, it offers real-time access to trending, popular, and upcoming movies,
+                along with detailed insights
+                about each title.
+              </p>
+              <!--               <ul class="project-features mt-3">
+                <li><strong>Dynamic Search:</strong> Instantly search for movies by title with real-time results and
+                  pagination.</li>
+                <li><strong>Detailed Movie Pages:</strong> Access cast, crew, trailers, and personalized
+                  recommendations.</li>
+                <li><strong>Genre & Language Filtering:</strong> Explore movies by genre or language, including support
+                  for Nigerian languages like Igbo, Yoruba, and Hausa.</li>
+                <li><strong>Trending Movies:</strong> Stay updated with weekly trending titles.</li>
+                <li><strong>Responsive Design:</strong> Enjoy seamless browsing on any device.</li>
+              </ul> -->
+
 
             </div>
 
@@ -768,32 +925,41 @@
               <span class="stack-item">Django</span>
               <span class="stack-item">MySQL</span>
 
-              <div class="stack">
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/HTML.png" alt="" srcset="">
-                </div>
+            </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Python.png" alt="" srcset="">
-                </div>
+            <div class="stack">
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/HTML.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Bootstrap.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Python.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/CSS.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Bootstrap.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/django.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/CSS.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/django.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
+              </div>
+
+              <div class="cta mt-4">
+                <a href="#" target="_blank" class="btn1">View Live</a>
+                <a href="https://github.com/Cyberod/Cinemania/blob/main/README.md" target="_blank" class="btn2">GitHub
+                  Repo</a>
               </div>
             </div>
+
+
 
           </div>
         </div>
@@ -802,9 +968,14 @@
           <div class="card " data-aos="fade-left" data-aos-duration="2000" id="card-img">
             <img src="/assets/img/ExpenseWise/expense1.jpg" alt="" class="image-fluid">
             <div class="card-body" id="plus-img">
-              <span><i class='bx bx-plus' style='color:#000000' data-bs-toggle="modal" data-bs-target="#portfolio-modal2"></i></span>
+              <span><i class='bx bx-plus' style='color:#000000' data-bs-toggle="modal"
+                  data-bs-target="#portfolio-modal2"></i></span>
               <h3 class="pt-3">ExpenseWise</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque.Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque.
+              <p>The ExpenseWise is a powerful web application designed to simplify personal finance
+                management. It allows users to track their expenses and income, visualize financial data, and export
+                records for offline use. With an intuitive interface and robust features, this app empowers users to
+                take control of their finances.
+              </p>
             </div>
             <div class="stack-list mb-2">
               <span class="stack-item">Html5</span>
@@ -814,26 +985,33 @@
               <span class="stack-item">Django</span>
               <span class="stack-item">MySQL</span>
 
-              <div class="stack">
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/HTML.png" alt="" srcset="">
-                </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Python.png" alt="" srcset="">
-                </div>
+            </div>
+            <div class="stack">
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/HTML.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Bootstrap.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Python.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/django.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Bootstrap.png" alt="" srcset="">
+              </div>
 
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/django.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
+              </div>
+
+              <div class="cta mt-4">
+                <a href="#" target="_blank" class="btn1">View Live</a>
+                <a href="https://github.com/Cyberod/ExpenseWise/blob/main/README.md" target="_blank" class="btn2">GitHub
+                  Repo</a>
               </div>
             </div>
 
@@ -842,14 +1020,22 @@
 
         <div class="col-lg-1"></div>
         <div class="col-lg-1"></div>
+
+        <!-- Budget Automator -->
         <div class="col-lg-5 mb-3">
           <div class="card " data-aos="fade-right" data-aos-duration="2000" id="card-img">
             <div class="card-body" id="plus-img">
-              <img src="" alt="" class="image-fluid">
-              <span><i class='bx bx-plus' style='color:#ffffff' ></i></span>
+              <img src="assets/img/Budget_automation.jpg" alt="" class="image-fluid">
+              <span><i class='bx bx-plus' style='color:#ffffff'></i></span>
               <h3 class="pt-3">Budget Automator</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque.
-            
+              <p>A dynamic financial management tool designed to simplify budgeting.
+                This system offers both a Graphical User Interface (GUI) and a Command Line Interface (CLI),
+                allowing users to create and manage budget plans effortlessly. Users can choose from predefined
+                budgeting strategies or customize their own, with automatic breakdowns of expenses into categories and
+                subcategories. Built with Python, the system ensures flexibility, ease of use, and persistent storage
+                for saving plans.
+                Perfect for individuals seeking a streamlined approach to financial planning.
+
             </div>
 
             <div class="stack-list mb-2">
@@ -857,38 +1043,46 @@
               <span class="stack-item">Linux</span>
               <span class="stack-item">Tkinter</span>
               <span class="stack-item">Django</span>
-
-
-              <div class="stack">
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Python.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Tkinter.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Linux.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
-                </div>
-              </div>
             </div>
 
+            <div class="stack">
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Python.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Tkinter.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Linux.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
+              </div>
+
+              <div class="cta mt-4">
+                <a href="" target="_blank" class="btn1">View Live</a>
+                <a href="https://github.com/Cyberod/Budget_Automation/blob/main/README.md" target="_blank"
+                  class="btn2">GitHub Repo</a>
+              </div>
+            </div>
           </div>
         </div>
-        
+
+        <!-- Portfolio Website -->
         <div class="col-lg-5 mb-3">
           <div class="card" data-aos="fade-left" data-aos-duration="2000" id="card-img">
             <div class="card-body" id="plus-img">
-              <img src="" alt="" class="image-fluid">
-              <span><i class='bx bx-plus' style='color:#ffffff' ></i></i></span>
+              <img src="assets/img/portfolio_img.jpg" alt="" class="image-fluid">
+              <span><i class='bx bx-plus' style='color:#ffffff'></i></i></span>
               <h3 class="pt-3">Portfolio Website</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque. Quisquam, doloremque.
+              <p>Explore the work and expertise of Ifeanyi Jonathan, a passionate Fullstack Software Engineer with a
+                focus on backend development. This portfolio showcases my journey, skills, and projects, highlighting my
+                dedication to building scalable, user-centric applications.
+              </p>
 
             </div>
 
@@ -897,278 +1091,290 @@
               <span class="stack-item">Bootstrap CSS</span>
               <span class="stack-item">CSS</span>
               <span class="stack-item">Git</span>
+            </div>
+            <div class="stack">
 
-
-
-              <div class="stack">
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Python.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Tkinter.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/Linux.png" alt="" srcset="">
-                </div>
-
-                <div class="stack-icon">
-                  <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
-                </div>
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Python.png" alt="" srcset="">
               </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Tkinter.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/Linux.png" alt="" srcset="">
+              </div>
+
+              <div class="stack-icon">
+                <img src="/assets/img/stacks/MySQL.png" alt="" srcset="">
+              </div>
+            </div>
+
+            <div class="cta mt-4">
+              <a href="https://linkedin.com" target="_blank" class="btn1">View Live</a>
+              <a href="https://github.com/" target="_blank" class="btn2">GitHub Repo</a>
             </div>
 
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        
+  <!-- CONTACT SECTION -->
+  <section class="contact py-3" id="contact">
+    <div class="container py-5">
+      <h1 class="text-uppercase text-center pb-2">Contact Me</h1>
 
+      <div class="row ">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4 mt-5 py-5 contact-me" data-aos="fade-right" data-aos-duration="2000">
+          <span>
+            <h3 class="contact-head ">Let us create something Amazing together</h3>
+          </span>
+          <p class="contact-text ">Have a project in mind or just want to chat? I'm always excited to collaborate on new
+            ideas and challenges.</p>
+          <div class="row mb-2 align-items-center">
+            <div class="col-auto">
+              <div class="circle">
+                <span><i class='bx bxl-linkedin' style="color: #ffffff;"></i></span>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <a href="https://www.linkedin.com/in/jonathan-ifeanyi-2318a2208/" target="_blank"
+                class="social-link ">https://www.linkedin.com</a>
+            </div>
+          </div>
+
+          <div class="row mb-2 align-items-center">
+            <div class="col-auto">
+              <div class="circle">
+                <span><i class='bx bx-envelope' style="color: #ffffff;"></i></span>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <a href="jonazkeez@gmail.com" class="social-link">jonazkeez@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="row mb-2 align-items-center">
+            <div class="col-auto">
+              <div class="circle">
+                <span><i class='bx bxl-upwork' style="color: #ffffff;"></i></span>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <a href="https://www.upwork.com/freelancers/~01b16cb0495d147f12" target="_blank" class="social-link">
+                https://upwork.com</a>
+            </div>
+          </div>
+          <p>Let's connect on</p>
+
+          <div class="follow">
+            <a href="https://github.com/Cyberod"><span><i class='bx bxl-github' style="color: #ffffff;"></i></span></a>
+            <a href="https://x.com/JonathanIfean13"><span><i class='bx bxl-twitter'
+                  style="color: #ffffff;"></i></span></a>
+
+          </div>
+
+        </div>
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4 messaging" data-aos="fade-left" data-aos-duration="2000">
+          <span>
+            <h4 class=" contact-head mt-4">Send a Message</h4>
+          </span>
+          <p class="py-4 contact-text">Fill out the form and I will get back to you as soon as possible</p>
+          <form action="mailto:jonatkeez@gmail.com" method="post" enctype="text/plain">
+
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Name" id="name">
+              </div>
+
+              <div class="col-lg-6">
+                <input type="email" class="form-control bg-light  mb-3" placeholder="Email" id="email">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Subject" id="subject">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <textarea class="form-control bg-light mb-3" placeholder="Message" cols="7" rows="7"
+                  id="messager"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn1 my-2 send" onclick="sendMail()">Send</button>
+          </form>
+        </div>
+        <div class="col-lg-1"></div>
       </div>
     </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact py-3">
-      <div class="container py-5">
-        <h1 class="text-uppercase text-center pb-2">Contact Me</h1>
-        
-        <div class="row ">
-          <div class="col-lg-1"></div>
-          
-          <div class="col-lg-4 mt-5 py-5 contact-me" data-aos="fade-right" data-aos-duration="2000">
-            <span><h3 class="contact-head ">Let us create something Amazing together</h3></span>
-            <p class="contact-text ">Have a project in mind or just want to chat? I'm always excited to collaborate on new ideas and challenges.</p>
-            <div class="row mb-2 align-items-center">
-              <div class="col-auto">
-                <div class="circle">
-                  <span><i class='bx bxl-linkedin' style="color: #ffffff;"></i></span>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <a href="https://www.linkedin.com" target="_blank" class="social-link ">https://www.linkedin.com</a>
-              </div>
-            </div>
-            
-            <div class="row mb-2 align-items-center">
-              <div class="col-auto">
-                <div class="circle">
-                  <span><i class='bx bx-envelope' style="color: #ffffff;"></i></span> 
-                </div>
-              </div>
-              <div class="col mb-4">
-                <a href="mailto:your.email@example.com" class="social-link">jonazkeez@gmail.com</a>
-              </div>
-            </div>
-            
-            <div class="row mb-2 align-items-center">
-              <div class="col-auto">
-                <div class="circle">
-                  <span><i class='bx bxl-upwork' style="color: #ffffff;"></i></span>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <a href="https://www.upwork.com/your-profile" target="_blank" class="social-link"> https://upwork.com</a>
-              </div>
-            </div>
-            <p>Let's connect on</p>
-  
-            <div class="follow">
-              <a href="https://github.com/Cyberod"><span><i class='bx bxl-github' style="color: #ffffff;"></i></span></a>
-              <a href="https://twitter.com/Cyberod"><span><i class='bx bxl-twitter' style="color: #ffffff;"></i></span></a>
-  
-            </div>
-  
-          </div>
-          <div class="col-lg-1"></div>
-  
-          <div class="col-lg-4 messaging" data-aos="fade-left" data-aos-duration="2000">
-            <span ><h4 class=" contact-head mt-4">Send a Message</h4></span>
-            <p class="py-4 contact-text">Fill out the form and I will get back to you as soon as possible</p>
-            <form action="">
-  
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" class="form-control bg-light mb-3" placeholder="Name">
-                </div>
-  
-                <div class="col-lg-6">
-                  <input type="text" class="form-control bg-light  mb-3" placeholder="Email">
-                </div>
-              </div>
-  
-              <div class="row">
-                <div class="col-lg-12">
-                  <input type="text" class="form-control bg-light mb-3" placeholder="Subject">
-                </div>
-              </div>
-  
-              <div class="row">
-                <div class="col-lg-12">
-                  <textarea  class="form-control bg-light mb-3" placeholder="Message" cols="7" rows="7"></textarea>
-                </div>
-              </div>
-              <button class="btn1 my-2 send">Send</button>
-            </form>
-          </div>
-          <div class="col-lg-1"></div>
-        </div>
-      </div>
 
 
-    </section>
+  </section>
 
-    <div class="portfolio-modal modal fade mt-5" id="portfolio-modal1" aria-hidden="true" role="dialog">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content text-center">
-          <div class="container-fluid py-3">
-            <div class="row justify-content-center">
-              <div id="portfolioCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets/img/Cinemania/cinemania1.jpg" alt="" srcset="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania2.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania3.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania4.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania5.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania6.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania7.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania8.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania9.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania10.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania11.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania12.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania13.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/Cinemania/cinemania14.jpg" alt="">
-                  </div>
+  <div class="portfolio-modal modal fade mt-5" id="portfolio-modal1" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content text-center">
+        <div class="container-fluid py-3">
+          <div class="row justify-content-center">
+            <div id="portfolioCarousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/Cinemania/cinemania1.jpg" alt="" srcset="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania3.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania5.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania6.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania7.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania8.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania9.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania10.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania11.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania12.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania13.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/Cinemania/cinemania14.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-    <div class="portfolio-modal2 modal fade mt-5" id="portfolio-modal2" aria-hidden="true" role="dialog">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content text-center">
-          <div class="container-fluid py-3">
-            <div class="row justify-content-center">
-              <div id="portfolioCarousel2" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets/img/ExpenseWise/expense1.jpg" alt="" srcset="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense2.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense3.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense4.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense5.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense6.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense7.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense8.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense9.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense10.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense11.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense12.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense13.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense14.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense15.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/img/ExpenseWise/expense16.jpg" alt="">
-                  </div>
+  <div class="portfolio-modal2 modal fade mt-5" id="portfolio-modal2" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content text-center">
+        <div class="container-fluid py-3">
+          <div class="row justify-content-center">
+            <div id="portfolioCarousel2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/ExpenseWise/expense1.jpg" alt="" srcset="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense3.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense5.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense6.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense7.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense8.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense9.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense10.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense11.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense12.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense13.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense14.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense15.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/ExpenseWise/expense16.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
 
 
 
-    <footer class="py-2 text-center">
-      <p>2025 @Ifeanyi Jonathan. All rights reserved.</p>
-    </footer>
-    
+  <footer class="py-2 text-center">
+    <p>2025 @Ifeanyi Jonathan. All rights reserved.</p>
+  </footer>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: false, // This is the key setting
-        mirror: false // This enables animations when scrolling up
-      });
-    </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false, // This is the key setting
+      mirror: false // This enables animations when scrolling up
+    });
+  </script>
 </body>
-</html>
 
+</html>

@@ -211,7 +211,7 @@ span.fname {
 }
 
 .main .bt1:hover,
-.btn1:hover {
+.btn1:hover, .cta .btn1{
     border: 2px var(--first-color-light) solid;
 
 }
@@ -236,7 +236,7 @@ span.fname {
 }
 
 .main .bt2:hover,
-.btn2:hover {
+.btn2:hover, a.btn2:hover {
     border: 2px var(--first-color-alt) solid;
 }
 
@@ -254,6 +254,10 @@ span.fname {
 .about h2 {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bolder);
+}
+
+#about {
+    background-color: var(--container-color);
 }
 
 
@@ -278,9 +282,7 @@ span.fname {
 
 /* SERVICE SECTION */
 
-.services {
-    background-color: var(--container-color);
-}
+
 
 .card,
 .card-light {
@@ -437,9 +439,9 @@ span.fname {
 .stack-text {
     font-size: var(--small-font-size);
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-line-clamp: 5; /* number of lines to show */
     -webkit-box-orient: vertical;
-    line-clamp: 3;
+    line-clamp: 5;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -451,6 +453,7 @@ span.fname {
     gap: 0.5rem;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem;;
 
   }
   
@@ -468,9 +471,9 @@ span.fname {
 
   }
 
-.stack-list .stack {
+.stack {
 
-    margin-left: -10px;
+    margin-left: 10px;
 
 }
 
@@ -507,7 +510,7 @@ img {
     height: 100%;
     width: 100%;
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
 }
 
 #plus-img:hover::before {
@@ -578,6 +581,7 @@ input[placeholder="Message"] {
 
 
 
+
 .social-link {
     color: var(--text-color);
     font-weight: var(--font-semi-bold);
@@ -611,7 +615,9 @@ input[placeholder="Message"] {
 
  }
 
-
+ #experience {
+    background-color: var(--container-color);
+ }
 
 
 
@@ -728,6 +734,11 @@ input[placeholder="Message"] {
 
   }
 
+  .project-features {
+    font: var(--small-font-size);
+    color: var(--text-color);
+  }
+
 
   /* Education Section */
 .education {
@@ -777,6 +788,31 @@ input[placeholder="Message"] {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
   }
+
+  .cta {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+ .cta1 {
+    display: flex;
+    gap: 12px;
+ }
+
+  a.btn1, a.btn2 {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+
+    
+  }
+
+
   
   /* Responsive design */
   @media screen and (max-width: 768px) {
